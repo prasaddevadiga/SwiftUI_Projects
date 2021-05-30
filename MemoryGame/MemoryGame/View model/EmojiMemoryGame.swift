@@ -10,7 +10,7 @@ import SwiftUI
 class EmojiMemoryGame: ObservableObject {
     static var myEmojis = ["🚃", "🚌", "🚜", "✈️","♿️", "📵", "🚹", "🚷","☑️", "🔴", "😴", "🥔"]
     
-    @Published private var model: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCard: 5) { index in
+    @Published private var model: MemoryGame<String> = MemoryGame<String>(numberOfPairsOfCard: myEmojis.count) { index in
         myEmojis[index]
     }
     
