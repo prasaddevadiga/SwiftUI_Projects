@@ -12,7 +12,7 @@ struct WelcomeScreenApp: App {
     let game = EmojiMemoryGame()
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: game)
+            GameContentView(viewModel: game)
         }
     }
 }

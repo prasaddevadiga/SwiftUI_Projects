@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct GameContentView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
     var body: some View {
         VStack {
@@ -53,10 +53,10 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         let game = EmojiMemoryGame()
-        ContentView(viewModel: game)
+        GameContentView(viewModel: game)
             .preferredColorScheme(.light)
             .previewDevice("iPhone 12 Pro")
-        ContentView(viewModel: game)
+        GameContentView(viewModel: game)
             .preferredColorScheme(.dark)
             .previewDevice("iPhone 12 Pro")
     }
