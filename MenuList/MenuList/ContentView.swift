@@ -18,7 +18,9 @@ struct ContentView: View {
                 ForEach(menu) { section in
                     Section(header: SectionView(sectionName: section.name)) {
                         ForEach(section.items) { item in
-                            Text(item.name)
+                            NavigationLink(destination: ItemDetail(item: item)) {
+                                ItemRow(item: item)
+                            }
                         }
                     }
                 }
@@ -44,5 +46,6 @@ struct SectionView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Order())
     }
 }
