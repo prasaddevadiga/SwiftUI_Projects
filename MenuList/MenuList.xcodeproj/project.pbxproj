@@ -19,6 +19,7 @@
 		229A1DF1266B8E76006FD615 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1DF0266B8E76006FD615 /* ItemDetail.swift */; };
 		229A1DF5266BC1FF006FD615 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1DF4266BC1FF006FD615 /* OrderView.swift */; };
 		229A1DF8266BC48B006FD615 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1DF7266BC48B006FD615 /* MainView.swift */; };
+		229A1DFB266BCDC0006FD615 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229A1DFA266BCDC0006FD615 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		229A1DF0266B8E76006FD615 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		229A1DF4266BC1FF006FD615 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		229A1DF7266BC48B006FD615 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		229A1DFA266BCDC0006FD615 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				229A1DF0266B8E76006FD615 /* ItemDetail.swift */,
 				229A1DF4266BC1FF006FD615 /* OrderView.swift */,
 				229A1DF7266BC48B006FD615 /* MainView.swift */,
+				229A1DFA266BCDC0006FD615 /* CheckoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			files = (
 				229A1DF1266B8E76006FD615 /* ItemDetail.swift in Sources */,
 				229A1DF8266BC48B006FD615 /* MainView.swift in Sources */,
+				229A1DFB266BCDC0006FD615 /* CheckoutView.swift in Sources */,
 				229A1DF5266BC1FF006FD615 /* OrderView.swift in Sources */,
 				226821EC266A920C0038B3D9 /* Menu.swift in Sources */,
 				2211E5E62663FDB10034EA1F /* ContentView.swift in Sources */,
