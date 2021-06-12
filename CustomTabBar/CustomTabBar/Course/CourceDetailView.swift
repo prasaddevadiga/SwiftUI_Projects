@@ -20,9 +20,9 @@ struct CourseDetailView: View {
         .navigationBarItems(trailing: Button(action: {
             
         }, label: {
-            Image(systemName: "menu")
-                .renderingMode(.template)
-                .foregroundColor(.gray)
+//            Image(systemName: "menu")
+//                .renderingMode(.template)
+//                .foregroundColor(.gray)
         }))
     }
 }

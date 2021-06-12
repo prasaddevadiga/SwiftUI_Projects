@@ -47,7 +47,7 @@ struct CustomTabview: View {
             .padding(.bottom, edge?.bottom == 0 ? 20: 0)
         }
         .ignoresSafeArea(.keyboard, edges: .bottom)
-        .background(Color.black.opacity(0.05).ignoresSafeArea(.all, edges: .all))
+        .background(Color.purple.opacity(0.35).ignoresSafeArea(.all, edges: .all))
     }
 }
 struct CustomTabview_Previews: PreviewProvider {

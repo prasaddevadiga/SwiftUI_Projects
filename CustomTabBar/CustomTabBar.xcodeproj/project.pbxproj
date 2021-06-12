@@ -76,7 +76,7 @@
 				22DDE194267500D8003E77A3 /* CustomTabview.swift */,
 				22DDE197267500FB003E77A3 /* TabItem.swift */,
 				22DDE1A4267502DD003E77A3 /* Model */,
-				22DDE18F26750088003E77A3 /* Coourse */,
+				22DDE18F26750088003E77A3 /* Course */,
 				22DDE18A2674F26F003E77A3 /* Tab views */,
 				22DDE17A2673CF4F003E77A3 /* Assets.xcassets */,
 				22DDE17F2673CF4F003E77A3 /* LaunchScreen.storyboard */,
@@ -102,14 +102,14 @@
 			path = "Tab views";
 			sourceTree = "<group>";
 		};
-		22DDE18F26750088003E77A3 /* Coourse */ = {
+		22DDE18F26750088003E77A3 /* Course */ = {
 			isa = PBXGroup;
 			children = (
 				22DDE190267500A7003E77A3 /* HomeView.swift */,
 				22DDE19A2675015C003E77A3 /* CourceDetailView.swift */,
 				22DDE1A1267501C4003E77A3 /* CourseCell.swift */,
 			);
-			path = Coourse;
+			path = Course;
 			sourceTree = "<group>";
 		};
 		22DDE1A4267502DD003E77A3 /* Model */ = {

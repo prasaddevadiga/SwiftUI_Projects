@@ -17,17 +17,21 @@ struct CourseCell: View {
                     .renderingMode(.original)
                     .aspectRatio(contentMode: .fit)
                     .padding(.top, 10)
-                    .padding(.leading, 0)
+                    .padding(.horizontal)
                     .background(Color(course.asser))
                 HStack {
-                    VStack(alignment:.leading, spacing:12) {
+                    VStack(alignment:.leading, spacing: 8) {
                         Text(course.name)
-                            .font(.title)
+                            .font(.title3)
+                            .fontWeight(.heavy)
                         Text("\(course.numCourse) courses")
+                            .fontWeight(.medium)
                     }
+                    .padding(.bottom, 8)
+                    .foregroundColor(.black)
                     Spacer(minLength: 0)
                 }
-                .padding()
+                .padding(.horizontal)
             }
             .background(Color.white)
             .cornerRadius(15)
