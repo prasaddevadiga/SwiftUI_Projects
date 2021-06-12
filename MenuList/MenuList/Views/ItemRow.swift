@@ -14,8 +14,13 @@ struct ItemRow: View {
     var body: some View {
         HStack {
             Image(item.thumbnailImage)
+                .resizable()
+                .frame(width: 100, height: 100)
+                .aspectRatio(contentMode: .fit)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                .padding(8)
+                
             VStack(alignment: .leading) {
                 Text(item.name)
                     .font(.headline)
