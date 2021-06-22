@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+   
+    var body: some View {
+        HomeScreen()
+    }
+}
+
+struct HomeScreen: View {
+    
     @Environment(\.managedObjectContext) private var viewContext
     
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \Task.date, ascending: true)])
     private var tasks: FetchedResults<Task>
-    
     var body: some View {
         NavigationView {
             List {
@@ -31,7 +38,6 @@ struct ContentView: View {
             }, label: {
                 Text("Add")
             }))
-            
         }
     }
     
