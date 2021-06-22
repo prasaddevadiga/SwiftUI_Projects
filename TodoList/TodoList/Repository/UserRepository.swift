@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UserRepositoryProtocol {
-    func fetchUsers(completion: (User) -> Void)
+    func fetchUsers(completion: (UserProfile) -> Void)
 }
 
 final class UserRepository: UserRepositoryProtocol {
@@ -18,7 +18,7 @@ final class UserRepository: UserRepositoryProtocol {
         self.apiService = apiService
     }
     
-    func fetchUsers(completion: (User) -> Void) {
+    func fetchUsers(completion: (UserProfile) -> Void) {
         apiService.fetchUser(completion: completion)
     }
 }

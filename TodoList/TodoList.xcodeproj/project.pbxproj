@@ -13,8 +13,12 @@
 		225BFB4E2681F35400F2C778 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225BFB4D2681F35400F2C778 /* Preview Assets.xcassets */; };
 		225BFB5E2681F4A800F2C778 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB5D2681F4A800F2C778 /* UserProfileViewModel.swift */; };
 		225BFB632681F51400F2C778 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB622681F51400F2C778 /* UserRepository.swift */; };
-		225BFB682681F5A500F2C778 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB672681F5A500F2C778 /* User.swift */; };
+		225BFB682681F5A500F2C778 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB672681F5A500F2C778 /* UserProfile.swift */; };
 		225BFB6D2681F64A00F2C778 /* UserApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB6C2681F64A00F2C778 /* UserApiService.swift */; };
+		225BFB762681FF7900F2C778 /* TaskList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB742681FF7900F2C778 /* TaskList.xcdatamodeld */; };
+		225BFB7A2681FFA100F2C778 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB792681FFA100F2C778 /* PersistenceContainer.swift */; };
+		225BFB7D26820CA700F2C778 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB7C26820CA700F2C778 /* WelcomeScreen.swift */; };
+		225BFB8426824C9B00F2C778 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB8326824C9B00F2C778 /* SignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +30,12 @@
 		225BFB4F2681F35400F2C778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		225BFB5D2681F4A800F2C778 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		225BFB622681F51400F2C778 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
-		225BFB672681F5A500F2C778 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		225BFB672681F5A500F2C778 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		225BFB6C2681F64A00F2C778 /* UserApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiService.swift; sourceTree = "<group>"; };
+		225BFB752681FF7900F2C778 /* TaskList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskList.xcdatamodel; sourceTree = "<group>"; };
+		225BFB792681FFA100F2C778 /* PersistenceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceContainer.swift; sourceTree = "<group>"; };
+		225BFB7C26820CA700F2C778 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		225BFB8326824C9B00F2C778 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,8 @@
 				225BFB612681F4FD00F2C778 /* Repository */,
 				225BFB572681F36200F2C778 /* ViewModels */,
 				225BFB562681F35B00F2C778 /* Views */,
+				225BFB782681FF8000F2C778 /* DataStore */,
+				225BFB732681FF5400F2C778 /* Resource */,
 				225BFB4A2681F35400F2C778 /* Assets.xcassets */,
 				225BFB4F2681F35400F2C778 /* Info.plist */,
 				225BFB4C2681F35400F2C778 /* Preview Content */,
@@ -84,7 +94,10 @@
 		225BFB562681F35B00F2C778 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				225BFB8226824C6F00F2C778 /* Login */,
 				225BFB5C2681F47900F2C778 /* User */,
+				225BFB7C26820CA700F2C778 /* WelcomeScreen.swift */,
+				225BFB8126824C6800F2C778 /* Signup */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,7 +129,7 @@
 		225BFB662681F59900F2C778 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				225BFB672681F5A500F2C778 /* User.swift */,
+				225BFB672681F5A500F2C778 /* UserProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +140,37 @@
 				225BFB6C2681F64A00F2C778 /* UserApiService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		225BFB732681FF5400F2C778 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				225BFB742681FF7900F2C778 /* TaskList.xcdatamodeld */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		225BFB782681FF8000F2C778 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				225BFB792681FFA100F2C778 /* PersistenceContainer.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		225BFB8126824C6800F2C778 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				225BFB8326824C9B00F2C778 /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		225BFB8226824C6F00F2C778 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +245,11 @@
 				225BFB492681F35200F2C778 /* UserProfileView.swift in Sources */,
 				225BFB472681F35200F2C778 /* TodoListApp.swift in Sources */,
 				225BFB632681F51400F2C778 /* UserRepository.swift in Sources */,
-				225BFB682681F5A500F2C778 /* User.swift in Sources */,
+				225BFB7D26820CA700F2C778 /* WelcomeScreen.swift in Sources */,
+				225BFB8426824C9B00F2C778 /* SignupView.swift in Sources */,
+				225BFB682681F5A500F2C778 /* UserProfile.swift in Sources */,
+				225BFB762681FF7900F2C778 /* TaskList.xcdatamodeld in Sources */,
+				225BFB7A2681FFA100F2C778 /* PersistenceContainer.swift in Sources */,
 				225BFB5E2681F4A800F2C778 /* UserProfileViewModel.swift in Sources */,
 				225BFB6D2681F64A00F2C778 /* UserApiService.swift in Sources */,
 			);
@@ -392,6 +440,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		225BFB742681FF7900F2C778 /* TaskList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				225BFB752681FF7900F2C778 /* TaskList.xcdatamodel */,
+			);
+			currentVersion = 225BFB752681FF7900F2C778 /* TaskList.xcdatamodel */;
+			path = TaskList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 225BFB3B2681F35200F2C778 /* Project object */;
 }

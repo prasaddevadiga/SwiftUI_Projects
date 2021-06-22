@@ -8,11 +8,11 @@
 import Foundation
 
 protocol UserApiServiceProtocol {
-    func fetchUser(completion: (User) -> Void)
+    func fetchUser(completion: (UserProfile) -> Void)
 }
 
 final class UserApiService: UserApiServiceProtocol {
-    func fetchUser(completion: (User) -> Void) {
+    func fetchUser(completion: (UserProfile) -> Void) {
         completion(.init(userName: "Prasad"))
     }
 }
