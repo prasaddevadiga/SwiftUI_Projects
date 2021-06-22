@@ -28,12 +28,12 @@ struct WelcomeScreen: View {
                     .foregroundColor(.white)
                     .font(.title2)
                 
-                Button(action: {
-                    
-                }, label: {
-                    Text("Sign in")
-                        .padding()
-                })
+                NavigationLink(
+                    destination: LoginView(),
+                    label: {
+                        Text("Sign in")
+                            .padding()
+                    })
                 .frame(height: 70)
                 .frame(maxWidth: .infinity)
                 .foregroundColor(.black)

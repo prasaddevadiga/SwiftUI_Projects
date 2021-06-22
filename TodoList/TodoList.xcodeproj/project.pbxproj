@@ -19,6 +19,7 @@
 		225BFB7A2681FFA100F2C778 /* PersistenceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB792681FFA100F2C778 /* PersistenceContainer.swift */; };
 		225BFB7D26820CA700F2C778 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB7C26820CA700F2C778 /* WelcomeScreen.swift */; };
 		225BFB8426824C9B00F2C778 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB8326824C9B00F2C778 /* SignupView.swift */; };
+		225BFB8826825AE400F2C778 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BFB8726825AE400F2C778 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		225BFB792681FFA100F2C778 /* PersistenceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceContainer.swift; sourceTree = "<group>"; };
 		225BFB7C26820CA700F2C778 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		225BFB8326824C9B00F2C778 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		225BFB8726825AE400F2C778 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +96,9 @@
 		225BFB562681F35B00F2C778 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				225BFB7C26820CA700F2C778 /* WelcomeScreen.swift */,
 				225BFB8226824C6F00F2C778 /* Login */,
 				225BFB5C2681F47900F2C778 /* User */,
-				225BFB7C26820CA700F2C778 /* WelcomeScreen.swift */,
 				225BFB8126824C6800F2C778 /* Signup */,
 			);
 			path = Views;
@@ -169,6 +171,7 @@
 		225BFB8226824C6F00F2C778 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				225BFB8726825AE400F2C778 /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				225BFB682681F5A500F2C778 /* UserProfile.swift in Sources */,
 				225BFB762681FF7900F2C778 /* TaskList.xcdatamodeld in Sources */,
 				225BFB7A2681FFA100F2C778 /* PersistenceContainer.swift in Sources */,
+				225BFB8826825AE400F2C778 /* LoginView.swift in Sources */,
 				225BFB5E2681F4A800F2C778 /* UserProfileViewModel.swift in Sources */,
 				225BFB6D2681F64A00F2C778 /* UserApiService.swift in Sources */,
 			);

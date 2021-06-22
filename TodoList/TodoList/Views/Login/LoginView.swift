@@ -1,5 +1,5 @@
 //
-//  SignupView.swift
+//  LoginView.swift
 //  TodoList
 //
 //  Created by Prasad on 6/22/21.
@@ -7,17 +7,14 @@
 
 import SwiftUI
 
-struct SignupView: View {
-    
+struct LoginView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
-    
-    @State var name: String = ""
     @State var emailAddress: String = ""
     @State var password: String = ""
     
     var body: some View {
-        
-        VStack(alignment:.leading) {
+        VStack (alignment:.leading){
+            
             Button(action: {
                 self.mode.wrappedValue.dismiss()
             }, label: {
@@ -25,13 +22,13 @@ struct SignupView: View {
                     Rectangle()
                         .frame(width: 100, height: 50)
                         .opacity(0.2)
-                        
+                    
                     Image(systemName: "chevron.left")
                 }
             })
             .padding(.top, 50)
             VStack(alignment:.leading) {
-                Text("Hello! \nSignup to \nget started")
+                Text("Hello Again! \nWelcom \nback")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .padding(.bottom)
@@ -40,17 +37,12 @@ struct SignupView: View {
                     Image(systemName: "person.circle")
                         .resizable()
                 })
-                .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .center)
+                .frame(width: 100, height: 100, alignment: .center)
             }
             .padding(.leading)
             .padding(.bottom, 50)
             
             VStack (spacing:16) {
-                TextField("    Name", text: $name)
-                    .frame(height: 60)
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .shadow(color: Color.black.opacity(0.5), radius: 5, x: 1, y: 1)
                 TextField("    Email Address", text: $emailAddress)
                     .frame(height: 60)
                     .background(Color.white)
@@ -62,7 +54,6 @@ struct SignupView: View {
                     .cornerRadius(10)
                     .shadow(color: Color.black.opacity(0.5), radius: 5, x: 1, y: 1)
             }
-            .frame(maxWidth: .infinity)
             .padding(.horizontal, 20)
             
             Button(action: {
@@ -88,8 +79,8 @@ struct SignupView: View {
     }
 }
 
-struct SignupView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        SignupView(name: "", emailAddress: "", password: "")
+        LoginView()
     }
 }
