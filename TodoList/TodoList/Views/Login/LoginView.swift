@@ -28,16 +28,15 @@ struct LoginView: View {
             })
             .padding(.top, 50)
             VStack(alignment:.leading) {
-                Text("Hello Again! \nWelcom \nback")
+                Text("Hello Again! \nWelcome \nback")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .padding(.bottom)
                 
-                Button(action: {}, label: {
                     Image(systemName: "person.circle")
                         .resizable()
-                })
-                .frame(width: 100, height: 100, alignment: .center)
+                        .frame(width: 100, height: 100, alignment: .center)
+                        .foregroundColor(.blue)
             }
             .padding(.leading)
             .padding(.bottom, 50)
@@ -59,7 +58,7 @@ struct LoginView: View {
             Button(action: {
                 
             }, label: {
-                Text("Sign up")
+                Text("Sign in")
                     .fontWeight(.bold)
                     .font(.title2)
             })
