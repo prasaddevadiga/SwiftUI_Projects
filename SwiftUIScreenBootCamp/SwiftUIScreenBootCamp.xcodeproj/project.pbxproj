@@ -24,6 +24,7 @@
 		22F162EB2690DE1700C0C7CA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F162EA2690DE1700C0C7CA /* LoginViewModel.swift */; };
 		22F162EF2690DFE300C0C7CA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F162EE2690DFE300C0C7CA /* LoginView.swift */; };
 		22F162F32690E2F800C0C7CA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F162F22690E2F800C0C7CA /* AuthenticationViewModel.swift */; };
+		22F162FA2691E8A200C0C7CA /* LandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F162F92691E8A100C0C7CA /* LandingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		22F162EA2690DE1700C0C7CA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		22F162EE2690DFE300C0C7CA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		22F162F22690E2F800C0C7CA /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		22F162F92691E8A100C0C7CA /* LandingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				22F162C026909F7200C0C7CA /* OnboardingHomeView.swift */,
+				22F162F92691E8A100C0C7CA /* LandingScreen.swift */,
 				22F162C42690A33500C0C7CA /* OnboardingScreen.swift */,
 				22F162CD2690AC0E00C0C7CA /* OBCardView.swift */,
 			);
@@ -260,6 +263,7 @@
 				22F162F32690E2F800C0C7CA /* AuthenticationViewModel.swift in Sources */,
 				22F162B12690892800C0C7CA /* ContentView.swift in Sources */,
 				22F162EB2690DE1700C0C7CA /* LoginViewModel.swift in Sources */,
+				22F162FA2691E8A200C0C7CA /* LandingScreen.swift in Sources */,
 				22F162AF2690892800C0C7CA /* SwiftUIScreenBootCampApp.swift in Sources */,
 				22F162DB2690D62300C0C7CA /* LoggedInScreen.swift in Sources */,
 				22F162E62690DBE900C0C7CA /* UIApplication+Extension.swift in Sources */,

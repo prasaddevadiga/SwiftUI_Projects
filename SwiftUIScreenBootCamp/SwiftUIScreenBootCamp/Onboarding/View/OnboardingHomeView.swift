@@ -32,8 +32,8 @@ struct OnboardingHomeView: View {
                     OnboardingScreen(isPresenting: $showOnboarding, onboardViewModel: onboardViewModel)
                     
                 } else {
-                    LoginView()
-                        .navigationTitle("Login screen")
+                    LandingScreen()
+                        .navigationTitle("")
                 }
             }
             .onAppear(perform: {
